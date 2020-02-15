@@ -5,3 +5,13 @@ SPARK 3 preview on Linux(ubuntu 18)
       cd /home/soham/downloads  OR cd ~/downloads
       tar -xvf spark-3.0.0-preview2-bin-hadoop2.7.tgz /usr/spark_home
       
+      
+      JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+      PATH=$JAVA_HOME/bin:$PATH
+      export JAVA_HOME
+      export PATH
+      #The most important  step to esure pyspark runs
+      export PYSPARK_PYTHON=python3
+
+      SPARK_HOME=/usr/spark_home
+      export SPARK_HOME
