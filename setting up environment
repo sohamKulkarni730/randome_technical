@@ -14,4 +14,6 @@ SPARK 3 preview on Linux(ubuntu 18)
       export PYSPARK_PYTHON=python3
 
       SPARK_HOME=/usr/spark_home
+      PATH=$SPARK_HOME/bin:$PATH
       export SPARK_HOME
+      export PATH
