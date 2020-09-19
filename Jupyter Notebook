@@ -1,0 +1,15 @@
+Adding a new environment in Jupyter notebook
+
+Using conda --- Conda :
+
+conda create --name  <envName>
+
+conda activate <envName>
+
+###  everything happens in that perticular env:
+
+        conda install -c  <libraries>
+
+        conda install -c anaconda ipykernal
+
+        python -m ipykernel install --user --name=<envName>
