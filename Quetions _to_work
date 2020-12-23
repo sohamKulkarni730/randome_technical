@@ -1,0 +1,3 @@
+1. In spark , Data presented in fiels can be read directly into dataframes - > processed and stored into tables and we can do reverse i.e. read and store data into table first and
+  then read it into dataframe to perform conversion -> store data back to tables. In any application, both approches can yeild same results  ; What we are not sure is the
+  performance of each method and beat usecase for each. 
