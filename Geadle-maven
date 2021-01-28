@@ -1,0 +1,10 @@
+Bulding process-->> compiling , linking and packaging of the code 
+
+Maven : Maven is a build toool build by APACHE Foundation to build , publish and deploy multiple projects at once.
+        Supports C#, Java, Ruby
+        based on project object model
+        takes care of builds, DEPENDANCIES , reports , releases, distribution, mailing lists
+
+Graddle : build automation tool , 
+          gradle does everything maven does and counter maven's shortcommings too 
+          good for for incremetal functionality 
