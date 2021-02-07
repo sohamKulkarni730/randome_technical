@@ -20,3 +20,7 @@
             
             
       2. Creating spark scheam in DLL string and in structType in (Python and Java)
+      
+      3. Coelese is sused for performance reasons, we can change the number of partitions and hence no of spark node working at a time
+      
+      4.
