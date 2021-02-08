@@ -21,6 +21,13 @@
             
       2. Creating spark scheam in DLL string and in structType in (Python and Java)
       
-      3. Coelese is sused for performance reasons, we can change the number of partitions and hence no of spark node working at a time
+      3. Coelese is used for performance reasons,Coelese divides an RDD into number of partition of outr choice. if we choose partiion to be one tit will perform like collect()
+            . But unlike collect() result will still be an RDD. we can change the number of partitions and hence no of spark node working at a time
       
-      4.
+      4. data skew is a huge problem in big data applications, exmple is when we do a groupBy operations , we eend up having n numberof groups of data 
+            an that might occupy only n number of worked instaed of all of the workers in cluster. This makes wor distribution uneven and results in 
+            time lag / performance degradation . A way to deal withthis called salting. Salting makes key change into aratificial keys , ie.e ram is replaced with 
+            ram1 and ram2 . thus in group by opration those two key are treated as different and number of partition increases-> resulting in better utilisation of whole
+            cluster.
+            but salting should be used a a last tool to deal with skewing problem as more number of partition will increase work in shuffle stage and networ is goinf to be suffer.
+            Anywasys , salting need some testing to be done to know whthere benefits of implementing are outways the implemenion efforts
