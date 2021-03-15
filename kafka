@@ -1,4 +1,4 @@
-<h5>Step 1 start zookeeper server</h5> (A server that organises and keep configurations for distributed systems) : (In one command window)
+Step 1 start zookeeper server (A server that organises and keep configurations for distributed systems) : (In one command window)
 (On wiindows machine: got to bin/windows location if kafka has not been added to path variable . Zookeeper property file is under config directory)
 zookeeper-server-start.bat ../../config/zookeeper.properties
 
