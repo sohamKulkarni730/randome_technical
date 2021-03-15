@@ -1,0 +1,18 @@
+Step 1 start zookeeper server (A server that organises and keep configurations for distributed systems) : (In one command window)
+(On wiindows machine: got to bin/windows location if kafka has not been added to path variable . Zookeeper property file is under config directory)
+zookeeper-server-start.bat ../../config/zookeeper.properties
+
+Step 2 run kafka server : (Other command window than zookeepr one)
+(On wiindows machine: got to bin/windows location if kafka has not been added to path variable)
+kafka-server-start.bat server.properties
+List all the topics created:
+
+Create topics under kafka: (In other command windows than zookeepr and kafka)
+(On wiindows machine: got to bin/windows location if kafka has not been added to path variable)
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partition 1 -- topic <topicName>
+
+To start kafka producer on command line :
+kafka-console-producer.bat --bootstarp-server localhost:9092 --topic <topicName> --from-beginning
+
+To start kafka producer on command line :
+kafka-console-consumer.bat --bootstarp-server localhost:9092 --topic <topicName> --from-beginning
