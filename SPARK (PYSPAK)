@@ -1,10 +1,14 @@
       1.SPARK 3 preview on Linux(ubuntu 18)
-            wget http://apachemirror.wuchna.com/spark/spark-3.0.0-preview2/spark-3.0.0-preview2-bin-hadoop2.7.tgz
+            wget https://mirrors.estointernet.in/apache/spark/spark-3.1.1/spark-3.1.1-bin-hadoop2.7.tgz
             cd /usr
             mkdir /spark_home
             cd /home/soham/downloads  OR cd ~/downloads
-            tar -xvf spark-3.0.0-preview2-bin-hadoop2.7.tgz /usr/spark_home
-
+            tar -xvf sspark-3.1.1-bin-hadoop2.7.tgz -C /usr/spark_home
+            
+            #this might not needed , but if needed run manually and check if this has worked
+            #sudo mv /usr/spark_home/sspark-3.1.1-bin-hadoop2.7/{.,}* /usr/spark_home
+            
+            #sudo rmdir (to remove directory)
 
             JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
             PATH=$JAVA_HOME/bin:$PATH
@@ -17,6 +21,12 @@
             PATH=$SPARK_HOME/bin:$PATH
             export SPARK_HOME
             export PATH
+            
+            sudo apt install python3-pip
+            pip3 --version
+            pip install notebook
+            
+            
             
             
       2. Creating spark scheam in DLL string and in structType in (Python and Java)
