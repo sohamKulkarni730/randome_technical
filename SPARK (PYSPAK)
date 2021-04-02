@@ -25,8 +25,10 @@
             . But unlike collect() result will still be an RDD. we can change the number of partitions and hence no of spark node working at a time
       
       4. data skew is a huge problem in big data applications, exmple is when we do a groupBy operations , we eend up having n numberof groups of data 
-            an that might occupy only n number of worked instaed of all of the workers in cluster. This makes wor distribution uneven and results in 
-            time lag / performance degradation . A way to deal withthis called salting. Salting makes key change into aratificial keys , ie.e ram is replaced with 
+            and that might occupy only n number of worker instaed of all of the workers in cluster. This makes work distribution uneven and results in 
+            time lag / performance degradation (But how do we get to know about data distribution befor grouping them ? If we can tge this data before grouping then,
+            we have to group them by key and then perform following transformations on that perticular large group ). 
+            A way to deal withthis called salting. Salting makes key change into aratificial keys , ie.e ram is replaced with 
             ram1 and ram2 . thus in group by opration those two key are treated as different and number of partition increases-> resulting in better utilisation of whole
             cluster.
             but salting should be used a a last tool to deal with skewing problem as more number of partition will increase work in shuffle stage and networ is goinf to be suffer.
