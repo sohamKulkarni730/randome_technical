@@ -1,0 +1,8 @@
+SPARK
+count occurrences of each distinct value for every column in a dataframe:  
+// Group by key should be avoided 
+chat.groupBy(col(<column name>)).count().show();
+
+
+
+PANDAS
