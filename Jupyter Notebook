@@ -12,4 +12,4 @@ conda activate <envName>
 
         conda install -c anaconda ipykernal
 
-        python -m ipykernel install --user --name=<envName>
+        python -m ipykernel install --user --name <env name>
