@@ -3,3 +3,37 @@
 SELECT CITY, LENGTH(CITY) FROM STATION WHERE LENGTH(CITY)=(SELECT MAX(LENGTH(CITY)) FROM STATION )
 UNION 
 (SELECT CITY, LENGTH(CITY)  FROM STATION WHERE LENGTH(CITY)=(SELECT MIN(LENGTH(CITY)) FROM STATION ) ORDER BY CITY ASC LIMIT 1);
+
+
+--STRING OPERATIONS
+
+-String should start with vovel
+       (INSTR(CITY, 'e') = 1)   ### SQL positions are not like array, It start with 1st position (not 0th position)
+      -INSTR() function returns the first occurence of a character/string ### CASE INSENSETIVE 
+      SELECT DISTINCT(CITY) FROM STATION WHERE 
+      (INSTR(CITY, 'a') = 1) 
+      OR (INSTR(CITY, 'e') = 1) 
+      OR (INSTR(CITY, 'i') = 1) 
+      OR (INSTR(CITY, 'o') = 1) 
+      OR (INSTR(CITY, 'u') = 1)  ;
+      
+or 
+       SELECT DISTINCT CITY FROM STATION
+        WHERE CITY REGEXP '^[aeiou]'
+      
+      
+      
+-Sting end with vowels
+
+      SELECT DISTINCT CITY FROM STATION
+      WHERE CITY REGEXP '[aeiou]$'
+      
+-String with vowels at begining and at end
+     SELECT DISTINCT CITY FROM STATION
+     WHERE CITY REGEXP '^[aeiou].*[aeiou]$'
+     
+-     
+
+
+
+
