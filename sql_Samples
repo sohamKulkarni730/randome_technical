@@ -32,7 +32,9 @@ or
      SELECT DISTINCT CITY FROM STATION
      WHERE CITY REGEXP '^[aeiou].*[aeiou]$'
      
--     
+-   nEsted orfering   - ordering can be done on function
+       select Name  from  STUDENTS  where Marks >75 
+       order by RIGHT(Name,3) , ID ;
 
 
 
