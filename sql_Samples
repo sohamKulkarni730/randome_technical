@@ -36,6 +36,15 @@ or
        select Name  from  STUDENTS  where Marks >75 
        order by RIGHT(Name,3) , ID ;
 
+- case statement
 
+select
+CASE
+  WHEN (A+B<= C or A+C<=B or B+C<= A) THEN 'Not A Triangle¹
+  WHEN (AB and B = C) THEN 'Equilateral
+  WHEN (A= B or AC or B = C) THEN 'equilateral'
+  ELSE 'Scalene'
+END
+TRIANGLES
 
 
