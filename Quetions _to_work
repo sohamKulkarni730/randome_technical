@@ -1,3 +1,19 @@
 1. In spark , Data presented in fiels can be read directly into dataframes - > processed and stored into tables and we can do reverse i.e. read and store data into table first and
   then read it into dataframe to perform conversion -> store data back to tables. In any application, both approches can yeild same results  ; What we are not sure is the
   performance of each method and beat usecase for each. 
+
+2.Indexng options - which scheme is better and for what scenarios ?
+3.How a query cost can be measured within synapse?
+
+4.Adhoc queries vs Stored proc vs ADF whic is cheaper and how can we optimise it ?
+  https://www.youtube.com/watch?v=rDxhTW7EkiU
+
+5.Execution plans ... working with them
+
+6. SQL query optimisation
+  - it is very impoprtant to consider that other queries will also be running parallel
+    to query you are optimising, thus achiving less query time with more computation usage is 
+    can be a bad idea
+    https://www.youtube.com/watch?v=t2R0-xcKw44
+
+7. optimise the ingestion proess
