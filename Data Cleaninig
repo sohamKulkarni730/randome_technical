@@ -1,0 +1,32 @@
+# Operation
+
+Data Cleaning:
+    indentify missing values and patterns
+    duplication and patterns
+    inconsistencies of data
+    data imputation
+Descriptive analysis : 
+    central tendancy
+    Dispersion
+    Distribution
+Data visialisation :
+    visualise distribution of data (bar, scatter, line plot)
+    outliers
+    trends
+    patterns
+    relationship between variables
+Data transforamtion:
+    Normalisation
+    standardisation
+    scalling
+    encoding categorical data
+Univariate Analysis:
+Bivariate Analysis:
+    indentify correlations
+    identify association
+    causation / Correltion analysis
+    contingency tables
+Multiavariate Analysis:
+    Principle component analysis
+    factor analysis
+    Clustering
